@@ -1,0 +1,12 @@
+{
+    "name": "ampluso/messente-bundle",
+    "description": "Send message to Symfony 2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Chylek",
+            "email": "marcin@chylek.pl"
+        }
+    ],
+    "require": {}
+}
