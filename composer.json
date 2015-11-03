@@ -14,7 +14,7 @@
         "issues": "http://github.com/ampluso/MessenteBundle/issues"
     },
     "require": {
-        "php": ">=5.5.0",
+        "php": ">=5.3.0",
         "symfony/framework-bundle": "2.*",
         "guzzlehttp/guzzle": "6.*"
     },
@@ -22,7 +22,7 @@
         "phpunit/phpunit": "5.*"
     },
     "autoload": {
-        "psr-4": { "Ampluso\\MessenteBundle": "" }
+        "psr-4": { "Ampluso\\": "." }
     },
     "target-dir": "Ampluso/MessenteBundle",
     "minimum-stability": "dev"
