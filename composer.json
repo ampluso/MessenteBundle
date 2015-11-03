@@ -1,6 +1,8 @@
 {
     "name": "ampluso/messente-bundle",
-    "description": "Send message to Symfony 2",
+    "type": "symfony-bundle",
+    "description": "MessenteBundle (bundle for Symfony2) it is a service for sending SMS.",
+    "keywords": ["sms", "bundle", "service"],
     "license": "MIT",
     "authors": [
         {
@@ -8,5 +10,20 @@
             "email": "marcin@chylek.pl"
         }
     ],
-    "require": {}
+    "support": {
+        "issues": "http://github.com/ampluso/MessenteBundle/issues"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "symfony/framework-bundle": "2.*",
+        "guzzlehttp/guzzle": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*"
+    },
+    "autoload": {
+        "psr-4": { "Ampluso\\MessenteBundle": "" }
+    },
+    "target-dir": "Ampluso/MessenteBundle",
+    "minimum-stability": "dev"
 }
