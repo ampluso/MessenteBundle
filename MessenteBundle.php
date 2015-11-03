@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of PingerBundle.
+ * This file is part of MessenteBundle.
  *
  * (c) Marcin Chyłek <marcin@chylek.pl>
  *

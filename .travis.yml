@@ -1,7 +1,7 @@
 language: php
 
 php:
-  - 5.5
+- 5.5
   - 5.6
   - 7
   - hhvm
@@ -36,7 +36,15 @@ matrix:
     - php: 5.6
       env: SYMFONY_VERSION"3.0.*@dev
 
-install: composer update --prefer-dist --no-interaction
+before_install:
+  - pip install --user codecov
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
 
 script:
-  - phpunit --coverage-text
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
